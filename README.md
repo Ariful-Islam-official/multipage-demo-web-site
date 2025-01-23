@@ -8,7 +8,8 @@ This project is a simple 5-page website created to demonstrate a multi-page HTML
 3. [Services Page](#services-page)
 4. [Portfolio Page](#portfolio-page)
 5. [Contact Page](#contact-page)
-6. [Setup Instructions](#setup-instructions)
+6. [Form Page](#form-page)
+7. [Setup Instructions](#setup-instructions)
 
 ## Home Page
 This is the main landing page of the website. It contains a welcoming header and navigation links to other pages.
@@ -32,6 +33,7 @@ This is the main landing page of the website. It contains a welcoming header and
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
+            <a href="form.html">Form</a>
         </nav>
     </header>
     <main>
@@ -90,6 +92,44 @@ footer {
     width: 100%;
     bottom: 0;
 }
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
 ```
 
 ## About Page
@@ -114,6 +154,7 @@ This page gives details about the website or the individual behind it.
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
+            <a href="form.html">Form</a>
         </nav>
     </header>
     <main>
@@ -148,6 +189,7 @@ This page outlines the services offered.
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
+            <a href="form.html">Form</a>
         </nav>
     </header>
     <main>
@@ -182,6 +224,7 @@ This page displays a gallery or portfolio items.
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
+            <a href="form.html">Form</a>
         </nav>
     </header>
     <main>
@@ -216,6 +259,7 @@ This page includes a form for users to reach out.
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
+            <a href="form.html">Form</a>
         </nav>
     </header>
     <main>
@@ -237,6 +281,56 @@ This page includes a form for users to reach out.
     </footer>
 </body>
 </html>
+```
+## Form Page
+This page includes a form for users submit.
+
+### HTML (contact.html):
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Submit Your Details</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="form.html">Form</a>
+        </nav>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Contact Form</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required placeholder="Enter the subject">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
 ```
 
 ## Setup Instructions
